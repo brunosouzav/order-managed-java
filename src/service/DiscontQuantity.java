@@ -1,5 +1,6 @@
-package domains;
+package service;
 
+import domains.Product;
 import repositories.Discount;
 
 public class DiscontQuantity implements Discount {
