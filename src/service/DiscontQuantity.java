@@ -9,6 +9,13 @@ public class DiscontQuantity implements Discount {
 	private double porcent;
 	
 	
+	public DiscontQuantity(int quantityMin, double porcent) {
+		super();
+		this.quantityMin = quantityMin;
+		this.porcent = porcent;
+	}
+
+
 	@Override
 	public double calculate(Product product) {
 		if (product.getQuantity()>= quantityMin) {
